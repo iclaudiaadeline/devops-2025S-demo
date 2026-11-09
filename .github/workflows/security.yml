@@ -46,7 +46,7 @@ jobs:
         with:
           image-ref: campus-notifier:dev
           severity: HIGH,CRITICAL
-          exit-code: "0"
+          exit-code: "1"
           format: table
 
   iac:
@@ -60,4 +60,4 @@ jobs:
           directory: .
           framework: terraform
           quiet: true
-          soft_fail: true
+          soft_fail: false
